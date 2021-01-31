@@ -25,20 +25,20 @@ button = Button()
 while True:
     if button.left:
         m1.on_for_rotations(SpeedPercent(30), 2)
-        spkr.play_file('elevator-ding-sound.wav')
+        # spkr.play_file('elevator-ding-sound.wav')
     if button.right:
         m1.on_for_rotations(SpeedPercent(30), -2)
-        spkr.play_file('elevator-ding-sound.wav')
+        # spkr.play_file('elevator-ding-sound.wav')
     if button.up:
         m1.on_for_rotations(SpeedPercent(30), 1)
-        spkr.play_file('elevator-ding-sound.wav')
+        # spkr.play_file('elevator-ding-sound.wav')
     if button.down:
         m1.on_for_rotations(SpeedPercent(30), -1)
-        spkr.play_file('elevator-ding-sound.wav')
+        # spkr.play_file('elevator-ding-sound.wav')
     if ts.is_pressed:
         leds.set_color("LEFT", "GREEN")
         leds.set_color("RIGHT", "GREEN")
-        spkr.play_file('explode.wav')
+        # spkr.play_file('explode.wav')
         # m.on_for_rotations(SpeedPercent(30), SpeedPercent(30), 0.25)
     # else:
     #     leds.set_color("LEFT", "RED")
